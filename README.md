@@ -5,6 +5,10 @@ Repository to sync my vim settings
 ```
 git clone git@github.com:jeepkd/dotvim.git ~/.vim
 ```
+or
+```
+git clone https://github.com/jeepkd/dotvim.git ~/.vim
+```
 
 ## Symlink configure file to home directory
 ```

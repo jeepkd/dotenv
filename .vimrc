@@ -31,7 +31,7 @@ set splitbelow
 set splitright
 
 "set background=light
-colorscheme monokai
+colorscheme molokai
 
 " syntastic
 set statusline+=%#warningmsg#

@@ -29,7 +29,7 @@ set colorcolumn=80
 set cursorline
 set splitbelow
 set splitright
-
+set nowrap 
 "set background=light
 colorscheme monokai-chris 
 

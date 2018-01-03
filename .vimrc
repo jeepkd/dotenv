@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'flazz/vim-colorschemes'
@@ -13,8 +14,8 @@ Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic', { 'do': 'pip install flake8' }
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 
 call plug#end()
 
@@ -30,12 +31,11 @@ set cursorline
 set splitbelow
 set splitright
 set nowrap 
-"set background=light
 colorscheme monokai-chris 
 
 " syntastic
 set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 " syntastic
@@ -48,8 +48,12 @@ let g:syntastic_python_checkers = ['flake8']
 " NERDCommenter
 let g:NERDDefaultAlign = 'left'
 
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
 map <C-i> :QuickRun<CR>
 map <C-k><C-b> :NERDTreeToggle<CR>
 
 command! Reload execute "so ~/.vimrc"
-command! Vimrc execute "e ~/.vimrc"
+command! Vimrc execute "tabe ~/.vimrc"

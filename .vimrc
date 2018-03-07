@@ -5,7 +5,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'flazz/vim-colorschemes'
 Plug 'jiangmiao/auto-pairs'
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -32,6 +32,9 @@ set splitbelow
 set splitright
 set nowrap
 set hls
+
+" runtime path for fzf
+set rtp+=~/.fzf
 
 "set background=light
 colorscheme monokai-chris

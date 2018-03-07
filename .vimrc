@@ -30,8 +30,11 @@ set colorcolumn=80
 set cursorline
 set splitbelow
 set splitright
-set nowrap 
-colorscheme monokai-chris 
+set nowrap
+set hls
+
+"set background=light
+colorscheme monokai-chris
 
 " syntastic
 set statusline+=%#warningmsg#
@@ -52,7 +55,6 @@ let g:NERDDefaultAlign = 'left'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-map <C-i> :QuickRun<CR>
 map <C-k><C-b> :NERDTreeToggle<CR>
 
 command! Reload execute "so ~/.vimrc"

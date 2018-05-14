@@ -1,6 +1,12 @@
 # dotvim
 Repository to sync my vim settings
 
+## Requirements
+On ubuntu: 
+```
+sudo apt install cmake
+```
+
 ## Clone this repo
 ```
 git clone git@github.com:jeepkd/dotvim.git ~/.vim

@@ -4,7 +4,7 @@ Repository to sync my vim settings
 ## Requirements
 On ubuntu: 
 ```
-sudo apt install cmake
+sudo apt install -y cmake
 ```
 
 ## Clone this repo

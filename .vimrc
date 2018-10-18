@@ -4,6 +4,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'airblade/vim-gitgutter'
 Plug 'andrewradev/splitjoin.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'flazz/vim-colorschemes'
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
@@ -41,7 +42,7 @@ set hls
 set rtp+=~/.fzf
 
 "set background=light
-colorscheme monokai-chris
+colorscheme nord
 
 " syntastic
 set statusline+=%#warningmsg#

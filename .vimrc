@@ -4,7 +4,6 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'airblade/vim-gitgutter'
 Plug 'andrewradev/splitjoin.vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'flazz/vim-colorschemes'
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
@@ -16,6 +15,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thinca/vim-quickrun'
+Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
@@ -42,7 +42,7 @@ set hls
 set rtp+=~/.fzf
 
 "set background=light
-colorscheme nord
+colorscheme codedark
 
 " syntastic
 set statusline+=%#warningmsg#

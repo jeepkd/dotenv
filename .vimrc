@@ -9,6 +9,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'google/yapf', { 'rtp': 'plugins/vim', 'for': 'python' }
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
@@ -41,6 +42,11 @@ set hls
 " runtime path for fzf
 set rtp+=~/.fzf
 
+" Ack : Use ag instead of ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 "set background=light
 colorscheme codedark
 
@@ -63,7 +69,9 @@ let g:NERDDefaultAlign = 'left'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+" Keymapping
 map <C-k><C-b> :NERDTreeToggle<CR>
 
+" Custom commands
 command! Reload execute "so ~/.vimrc"
 command! Vimrc execute "tabe ~/.vimrc"

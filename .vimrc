@@ -38,6 +38,7 @@ set splitbelow
 set splitright
 set nowrap
 set hls
+set fillchars+=vert:│
 
 " runtime path for fzf
 set rtp+=~/.fzf

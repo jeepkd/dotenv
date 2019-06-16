@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'Chiel92/vim-autoformat'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'airblade/vim-gitgutter'
 Plug 'andrewradev/splitjoin.vim'
 Plug 'christoomey/vim-tmux-navigator'
@@ -22,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic', { 'do': 'pip install flake8' }
+Plug 'lifepillar/vim-mucomplete'
 
 call plug#end()
 
@@ -69,6 +69,11 @@ let g:NERDDefaultAlign = 'left'
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+" MU autocomplete
+set completeopt+=menuone
+set completeopt+=noselect
+let g:mucomplete#enable_auto_at_startup = 1
 
 " Keymapping
 map <C-k><C-b> :NERDTreeToggle<CR>
